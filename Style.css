@@ -1,0 +1,423 @@
+.grid{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 20% 60% 20%;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+body{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    margin:0px;
+    background-color:darkblue;
+}
+.loading-background{
+    background-color: black;
+}
+.loading-text {
+    width: fill;
+    color: white;
+    font-size: 40px;
+    margin-top: 40px;
+    text-align: center;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    padding: 10px 8%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    font-family: "press start 2p",'Courier New', Courier, monospace;
+}
+.navbar{
+    position: sticky;
+    padding: 40p;
+    top: 40px;
+}
+.navbar a {
+    
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 20px;
+    left: 10px;
+}
+.navbar a:hover {
+    color: cyan;
+}
+.imgGalleryp3logo{
+    position: fixed;
+    top: 0px;
+    left: 10px;
+}
+.middel{
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+color:white;
+font-family: "press start 2p";
+}
+.table{
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    box-shadow: 9px 6px 4px #5B2C6F;
+    background-color: lightblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 7px;
+    align-items: center;
+}
+.texttable{
+    align-items: center;
+    justify-content: center; 
+}
+.flex-container{
+    background: linear-gradient(to left, #161617, #5b4a4a 50%, #22a2c9 75%);
+    height: 200px;
+    width: -150px;
+}
+.achtergrond{
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-position: center;
+}
+.socialicons a{
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 20px;
+    align-content: center;
+}
+.socialicons a:hover{
+    color: darkgreen;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'makoto yukari junpei fuuka aigis';
+    gap: 10px;
+    padding: 10px;
+}
+    @media only screen and (max-width: 1140px) {
+        .grid-container{
+            grid-template-areas: 
+            " makoto yukari"
+            " junpei fuuka" 
+            "aigis ." 
+            ;
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        .grid-container{
+            grid-template-areas: 
+            "makoto"
+            "yukari" 
+            "junpei"
+            "fuuka"
+            "aigis" 
+            ;
+        }
+    }
+.screenShot:nth-child(1){
+grid-area: makoto;
+}
+.screenShot:nth-child(2){
+    grid-area: yukari;
+}
+.screenShot:nth-child(3){
+    grid-area: junpei;
+}
+.screenShot:nth-child(4){
+    grid-area: aigis;
+}
+.screenShot:nth-child(5){
+    grid-area: fuuka;
+}
+  .grid-container > div {
+    padding: 0%;
+  }
+.footer{
+    text-align: center;
+    position: center;
+    background-color: gray;
+    padding:2%;
+    font-family: Arial;
+}
+.video{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    float: right;
+    position: center;
+}
+.SEES{
+color: lightskyblue;
+}
+.SEES2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: lightblue;
+}
+.Strega{
+color: darkgreen;
+}
+.videoprtaginest{
+    color: darkcyan;
+}
+.GameplayandBGM{
+    float: left;
+    color: yellow;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video{
+    display:grid;
+    grid-template-areas: 
+    "video1 video2 video3"
+    "text1 text2 text3"
+    "video4 video5 video6";
+}
+@media only screen and (max-width: 1140px) {
+    .video{
+        grid-template-areas: 
+        "video1 video2"
+        ". text1" 
+        "video3 video4" 
+        "text2 text3" 
+        "video5 video6";
+    }
+}
+@media only screen and (max-width: 600px) {
+    .video{
+        grid-template-areas: 
+        "video1"
+        "video2" 
+        "video3"
+        "text1"
+        "video4" 
+        "text2" 
+        "video5"
+        "text3"
+        "video6";
+    }
+}
+#video{
+    width: 100vw;
+    height: auto;
+}
+.video *{
+    margin: 2%;
+    text-align: center;
+    width: 96%;
+    height: auto;
+}
+.ele1{
+    grid-area: video1;
+}
+.ele2{
+    grid-area: video2;
+}
+.ele3{
+    grid-area: video3;
+}
+.ele4{
+    grid-area: text1;
+}
+.ele5{
+    grid-area: text2;
+}
+.ele6{
+    grid-area: text3;
+}
+.ele7{
+    grid-area: video4;
+}
+.ele8{
+    grid-area: video5;
+}
+.ele9{
+    grid-area: video6;
+}
+.screenShot{
+    display: grid;
+    grid-template-areas: 
+    "foto1 foto2 foto3 foto4"
+    "foto5 foto6 foto7 foto8"
+    ;
+}
+@media only screen and (max-width: 1140px) {
+    .screenShot{
+        grid-template-areas: 
+        "foto1 foto2"
+        "foto3 foto4" 
+        "foto5 foto6" 
+        "foto7 foto8" 
+    }
+}
+@media only screen and (max-width: 600px) {
+    .screenShot{
+        grid-template-areas: 
+        "foto1"
+        "foto2" 
+        "foto3"
+        "foto4"
+        "foto5" 
+        "foto6" 
+        "foto7"
+        "foto8"
+        ;
+    }
+}
+.screenShot *{
+    width: 100%;
+    height: auto;
+
+}
+.screenShot:nth-child(1){
+    grid-area: foto1;
+}
+.screenShot:nth-child(2){
+    grid-area: foto2;
+}
+.screenShot:nth-child(3){
+    grid-area: foto3;
+}
+.screenShot:nth-child(4){
+    grid-area: foto4;
+}
+.screenShot:nth-child(5){
+    grid-area: foto5;
+}
+.screenShot:nth-child(6){
+    grid-area: foto6;
+}
+.screenShot:nth-child(7){
+    grid-area: foto7;
+}
+.screenShot:nth-child(8){
+    grid-area: foto8;
+}
+.screenShot > div{
+    padding: 0px;
+}
+.Limited{
+    display:grid;
+    grid-template-areas: 
+    "Shinje Limited";
+}
+@media only screen and (max-width: 1140px) {
+    .Limited{
+        grid-template-areas: 
+        " Shinje Limited ";
+    }
+}
+@media only screen and (max-width: 600px) {
+    .Limited{
+        grid-template-areas: 
+        "Limited"
+        "Shinje";
+    }
+}
+#Limited{
+    width: 100vw;
+    height: auto;
+}
+.limited:nth-child(1){
+    grid-area: Limited;
+}
+.limited:nth-child(2){
+    grid-area: Shinje;
+}
+.grid-containerF{
+    display: grid;
+    grid-template-areas: 
+    'text text text text text text foto15 foto15 foto15'
+    'text text text text text text foto15 foto15 foto15'
+    'text text text text text text foto15 foto15 foto15'
+    ;
+}
+.grid-containerF > div{
+    padding: 0%;
+}
+.foto16{ grid-area: foto16;}
+.grid-containerG{
+    display: grid;
+    grid-template-areas: 
+    'foto16 foto16 foto16 text text text text text '
+    'foto16 foto16 foto16 text text text text text '
+    'foto16 foto16 foto16 text text text text text '
+    ;
+}
+.grid-containerG > div{
+    padding: 0%;
+}
+h3{
+    color:azure ;
+    font-family: sans-serif;
+}
+.MeetP3protaginest{
+    color: lightseagreen;
+    font-family: 'Courier New', Courier, monospace;
+}
+.MeetP3yukari{
+    color: pink;
+    font-family: 'Courier New', Courier, monospace;
+}
+.MeetP3Junpei{
+    color: purple;
+    font-family: 'Courier New', Courier, monospace;
+}
+.MeetP3Akihiko{
+    color: gray;
+    font-family: 'Courier New', Courier, monospace;
+}
+.MeetP3Mitsuru{
+    color:lightcoral ;
+    font-family: 'Courier New', Courier, monospace;
+}
+.MeetP3fuuka{
+    color: lightgreen;
+    font-family: 'Courier New', Courier, monospace;
+}
+.MeetP3Aigis{
+    color: yellow;
+    font-family: 'Courier New', Courier, monospace;
+}
+.MeetP3Shinjiro{
+    color: darkred;
+    font-family: 'Courier New', Courier, monospace;
+}
+.MeetP3Koromaru{
+    color: bisque;
+    font-family: 'Courier New', Courier, monospace;
+}
+.MeetP3Ken{
+    color: orange;
+    font-family: 'Courier New', Courier, monospace;
+}
+.signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

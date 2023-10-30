@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Style.css" >
+    <meta charset="UTF-8">
+
+<!--dit orgt ervoor dat de website aangepast wordt aan je scherm-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="persona 3 reload/evoker.png">
+
+<!-- bepaal de titel-->
+    <title>Loading Screen</title>
+</head>
+<body class="loading-background">
+<!---animatie en foto van laadscherm-->
+    <div class="loading-video">
+        <video autoplay loop muted plays-inline class="achtergrond">
+            <source src="persona 3 reload/download.mp4" type="video/mp4">
+        </video>
+        <div class="loading-text"> Remember, You Will Die <br> Time never waits.<br> It delivers all equally to the same end.</div>
+    </div>
+<!--script die ervoor zorgt dat de loadingscreen automatisch naar inlogportaal gaat-->
+    <script>
+        setTimeout(function () {
+            window.location.href = "index.html";
+        }, 1559);
+    </script>
+
+</body>
+</html>
